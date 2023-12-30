@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+div.header{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dae1e8;
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+div.header > a{
+  text-decoration: none;
+  /* color: white; */
+}
+
+
+.sections_container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* min-height: calc(100vh - 120px); */
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+.section h3.heading {
+  background-color: #dae1e8;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.4rem;
+}
+.section p {
+  padding: 0 5px;
+}
+.section > .usage_instruction {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 25px;
+}
+
+.section > img{
+  margin-left: 20px;
+  width: 320px;
+}
+
+.sections_container > button{
+  width: max-content;
+  padding: 5px 10px;
+  background-color: aqua;
+  text-decoration: none;
+  /* color: white; */
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+.sections_container > button:hover{
+  cursor: pointer;
+}
+
+
+
+.container {
+  /* width: 100vw; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  /* min-height: calc(100vh - 120px); */
+  /* font-size: 12px; */
+}
+
+.container-1 {
+  /* width: 100vw; */
+  display: flex;
+  justify-content: center;
+  /* font-size: 12px; */
+}
+
+button {
+  height: 3vw;
+  width: 3vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 10px;
+  /* text-align: center; */
+
+  color: black;
+  /* border: none; */
+  background-color: rgb(214, 214, 214);
+  box-shadow: 4px 4px 8px #474343, -5px -5px 10px #fff;
+  outline: none;
+}
+
+/* button:active {
+        box-shadow: 1px 1px 2px #fff8f8, -1px -1px 2px #474343;
+      } */
+.row-0-start {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-0,
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+
+.back {
+  width: 6vw;
+}
+
+.tab,
+.slace {
+  width: 4.5vw;
+}
+
+.caps,
+.enter {
+  width: calc(6vw + 2px);
+}
+
+.shift {
+  width: calc(7.5vw + 4px);
+}
+
+.row-1 > button,
+.row-2 > button {
+  margin-right: 2px;
+}
+
+.row-3 > button {
+  margin-right: 2.17px;
+}
+
+.row-4 > button {
+  margin-right: 2.37px;
+}
+
+.ctrl {
+  width: 5.5vw;
+}
+
+.win {
+  width: 5vw;
+}
+
+.alt {
+  width: 5vw;
+}
+
+.space {
+  width: 18vw;
+}
+
+.extra-btn-wrapper {
+  margin: calc(3vw + 10px) 0 0 10px;
+  /* margin-left: 10px; */
+}
+
+.extra {
+  width: 4vw;
+}
+
+.row-4 > button.uarr {
+  margin: 0 4.5vw;
+}
+
+.num-btn-wrapper {
+  margin: calc(3vw + 10px) 0 0 10px;
+  /* margin-left: 10px; */
+}
+
+.plus,
+.num-enter {
+  transform: scaleY(2.23);
+  transform-origin: top;
+  border-radius: 3px;
+}
+
+.num-0 {
+  width: 8.5vw;
+}
+
+.num-dot {
+  margin-left: 2px;
+}
+
+.extra-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.reset-btn,
+.start-btn {
+  width: 9vw;
+  height: 3vw;
+  background-color: aqua;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.key-pressed {
+  /* transform: scale(1.1); */
+  border-color: #ffc600;
+  box-shadow: 3px 3px 3px #ffc600;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  background-color: gray;
+}
+
+@media screen and (max-width: 875px) {
+  button {
+    font-size: 8px;
+  }
+}
+
+
+.footer_container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 80px; */
+  border-top: 1px solid white;
+  background-color: #dae1e8;
+  /* position: absolute;
+  bottom: 0;
+  left: 0; */
+}
+
+.footer_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  /* gap: 20px; */
+  max-width: 1000px;
+  /* border: 2px solid red; */
+  /* align-items: flex-start; */
+}
+
+p.footer_section {
+  text-align: center;
+}
+
+.footer_section > span.logo_txt{
+  font-weight: bold;
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.footer_section > span.thank_txt > i{
+  color: red;
+}
+.footer_section > span.thank_txt > span.name{
+  color: red;
+}
